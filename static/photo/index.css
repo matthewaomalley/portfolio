@@ -1,0 +1,106 @@
+h3 {
+    float: left;
+    font-family: kanit;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 35px;
+    padding-left: 5%;
+}
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+table {
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.gallery {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.cell {
+    padding: 5px;
+}
+
+.titles {
+    text-align: center;
+    padding-bottom: 1.5%;
+    font-size: 30px;
+    font-family: georgia;
+}
+
+img {
+    height: 400px;
+    width: 600px;
+    transition: transform .3s;
+    margin: 0 auto;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    -moz-transition:    color .3s;
+    -ms-transition:     color .3s;
+    -o-transition:      color .3s;
+    transition:         color .3s;
+}
+
+a:hover {
+    color: grey;
+    }
+
+a:visited {
+    text-decoration: none;
+}
+
+.navbar {
+    font-family: fire;
+    font-size: 15px;
+    float: right;
+    padding: 2.5%;
+}
+
+.navcell {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@font-face {
+    font-family: 'kanit';
+    src: url(fonts/kanit.ttf)
+}
+
+@font-face {
+    font-family: 'fire';
+    src: url(fonts/fire.ttf)
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

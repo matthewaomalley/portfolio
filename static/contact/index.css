@@ -1,0 +1,100 @@
+h3 {
+    float: left;
+    font-family: kanit;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 35px;
+    padding-left: 5%;
+}
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    -moz-transition:    color .3s;
+    -ms-transition:     color .3s;
+    -o-transition:      color .3s;
+    transition:         color .3s;
+}
+
+.maincontent {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.downloadButton {
+    border: none;
+    padding: 15px;
+    background-color: rgb(255, 203, 107);
+    font-family: titilli;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.downloadButton:hover {
+    background-color:rgb(255, 226, 171);
+    color: grey;
+}
+
+a:hover {
+    color: grey;
+    }
+
+a:visited {
+    text-decoration: none; 
+}
+
+.logoformat {
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.navbar {
+    font-family: fire;
+    font-size: 15px;
+    float: right;
+    padding: 2.5%;
+}
+
+.navcell {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@font-face {
+    font-family: 'kanit';
+    src: url(fonts/kanit.ttf)
+}
+
+@font-face {
+    font-family: 'fire';
+    src: url(fonts/fire.ttf)
+}
+
+@font-face {
+    font-family: 'titilli';
+    src: url(fonts/titilli.ttf)
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

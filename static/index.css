@@ -1,0 +1,102 @@
+h3 {
+    float: left;
+    font-family: kanit;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 35px;
+    padding-left: 5%;
+}
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    -moz-transition:    color .3s;
+    -ms-transition:     color .3s;
+    -o-transition:      color .3s;
+    transition:         color .3s;
+}
+
+.helloCell {
+    padding-right: 4%;
+}
+
+.helloText {
+    font-size: 35px;
+    background-color: rgb(255, 203, 107);
+    border-radius: 1px;
+    font-family: titilli;
+    text-align: center;
+}
+
+.aboutText {
+    font-size: 17px;
+    border-radius: 1px;
+    font-family: titilli;
+}
+
+.aboutMe {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin: auto;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.portrait {
+    height: 200px;
+    width: 195px;
+    border-radius: 1px;
+}
+
+a:hover {
+    color: grey;
+    }
+
+a:visited {
+    text-decoration: none; 
+}
+
+.navbar {
+    font-family: fire;
+    font-size: 15px;
+    float: right;
+    padding: 2.5%;
+}
+
+.navcell {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@font-face {
+    font-family: 'kanit';
+    src: url(fonts/kanit.ttf)
+}
+
+@font-face {
+    font-family: 'fire';
+    src: url(fonts/fire.ttf)
+}
+
+@font-face {
+    font-family: 'titilli';
+    src: url(fonts/titilli.ttf)
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

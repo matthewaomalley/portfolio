@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html lang = 'en'>
+
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>Assignment Portfolio</title>
+        <link rel = "stylesheet" href = "index.css">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    </head>
+
+    <body>
+        <header>
+            <h3>Matthew O'Malley</h3>
+        </header>
+
+        <table class = "navbar">
+            <td class = "navcell"><a href="https://mattomalley.azurewebsites.net/">About</a></td>
+            <td class = "navcell"><a href="https://mattomalley.azurewebsites.net/project"><strong>Projects</strong></a></td>
+            <td class = "navcell"><a href="https://mattomalley.azurewebsites.net/photo">Photography</a></td>
+            <td class = "navcell"><a href="https://mattomalley.azurewebsites.net/contact">Contact</a></td>
+        </table>
+
+        <script>
+
+            // Simple script to show and hide elements for displaying the right content
+            window.onload = function() {
+            hideCalcOnLoad(); };
+
+            function hideCalcOnLoad() {
+                document.getElementById("calculatorContent").classList.add("showNone")
+                document.getElementById("noteifyContent").classList.add("maincontent")
+            }
+
+            function showNoteify() {
+                document.getElementById("noteifyContent").classList.add("changecontent")
+                document.getElementById("noteifyContent").classList.remove("showNone")
+                document.getElementById("noteifyContent").classList.add("maincontent")
+                document.getElementById("calculatorContent").classList.add("showNone")
+            }
+
+            function showCalculator() {
+                document.getElementById("calculatorContent").classList.add("changecontent")
+                document.getElementById("noteifyContent").classList.add("showNone")
+                document.getElementById("calculatorContent").classList.add("maincontent")
+                document.getElementById("calculatorContent").classList.remove("showNone")
+            }
+
+        </script>
+
+        <table class = "projSelTab">
+            <tr>
+                <td class = "selectProject"><button onclick = "showNoteify()" class = "selectProjectButton"><a>Noteify</a></button></td>
+                <td class = "selectProject"><button onclick = "showCalculator()"class = "selectProjectButton"><a>Accupay</a></button></td>
+            </tr>
+        </table>
+
+        <div style = "width: 40%" id = "noteifyContent">
+            <p style = "font-size: 40px; font-family: titilli">Noteify</p>
+            <p style = "font-size: 15px; font-family: titilli">Noteify is a web app designed to save and serve text data in the form of notes. 
+                Noteify was developed in a simulated scrum environment modeling the Agile development lifecycle. 
+                It's functionality demonstrates client-server computing, client authorization, account creation 
+                and authentication with the help of Firebase, and much more.<br><br>This project was developed by a team of 3 over the course
+                of a few weeks as an end-of-semester project in a Software Engineering course (Spring 2022).</p>
+
+                <ul style = "float: left" class = "listStyle">
+                    <p><strong>Features:</strong></p>
+                    <li> Create an account with a username and password</li>
+                    <li> Verify account authenticity via email verification link</li>
+                    <li> Automatically proceed into site once link is clicked</li>
+                    <li> Only access pages if logged in and/or verified</li>
+                    <li> Enter and save notes to view or delete later via real-time database</li>
+                    <p>Note: Firebase trial has ended, disabling main functionality of website.</p>
+                </ul><br>
+
+                <button style = "margin: 10px;" class = "extLink"><a href = "https://noteify.azurewebsites.net/" target="_blank">Website</a></button>
+                <button class = "extLink"><a href = "https://github.com/MatthewSenese/Noteify" target = "_blank">Github</a></button>
+        </div>
+
+        <div style = "width: 40%" id = "calculatorContent">
+            <p style = "font-size: 40px; font-family: titilli">Accupay</p>
+            <p style = "font-size: 15px; font-family: titilli">Accupay is a lightweight GUI tool that calculates the after-tax paycheck
+                of hourly workers. It asks users for information including: pay rate, hours worked, state of residence, and tax bracket. It
+                demonstrates primary Object-Oriented Programming principles and industry best practices.</p><p>This project was developed
+                over a few weeks as an end-of-semester project in an Object-Oriented Programming course (Spring 2021).</p>
+
+                <ul style = "float: left" class = "listStyle">
+                    <p><strong>Features:</strong></p>
+                    <li> Lightweight, easy-to-use GUI interface</li>
+                    <li> Calculates Paycheck with given pay, hours, and tax information</li>
+                    <li> Allows user to reset fields</li>
+                    <p>Note: Tax bracket data no longer accurate.</p>
+                </ul><br>
+
+                <button class = "extLink"><a href = "https://github.com/matthewaomalley/AccuPayApp" target="_blank">Github</a></button>
+        </div>
+
+    </body>
+    </html>
