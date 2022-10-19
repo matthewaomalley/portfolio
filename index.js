@@ -1,4 +1,4 @@
-//Web app with Node.js and express for assignment portfolio
+//Web app with Node.js for personal site
 
 const express = require('express')
 const app = express()
