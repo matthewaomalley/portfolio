@@ -5,7 +5,7 @@
         <meta charset = 'UTF-8'>
         <title>Assignment Portfolio</title>
         <link rel = "stylesheet" href = "index.css">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
     </head>
 
     <body>
@@ -17,20 +17,45 @@
             <td class = "navcell"><a href="https://mattomalley.azurewebsites.net/"><strong>About</strong></a></td>
             <td class = "navcell"><a href="https://mattomalley.azurewebsites.net/project">Projects</a></td>
             <td class = "navcell"><a href="https://mattomalley.azurewebsites.net/photo">Photography</a></td>
-            <td class = "navcell"><a href="https://mattomalley.azurewebsites.net/contact">Contact</a></td>
         </table>
 
-        <table style = "width: 33%" class = "aboutMe">
+        <div class = "aboutMe">
+
+            <table style = "width: 33%; margin-right: auto; margin-left: auto">
+                <tr>
+                    <td class = "helloCell"><div class = "helloText">Hello, I'm<span style = "color: #579F7E; font-weight: 800;"> Matt</span></div></td>
+
+                    <td  rowspan = "2"><img class = "portrait" src="images/matt.jpg" alt = "Self Portrait"></td>
+                </tr>
+                <tr>
+                    <td class = "aboutText">I am currently a senior at Lewis University, pursuing a Bachelor's of Computer Science
+                        with a concentration in Secure Programming; Projected graduation May 2023. Here, you will find some of my projects,
+                        hobbies, and contact information.
+                    </td>
+                </tr>
+        </div>
+        
+        <table style = "width: 33%; margin-right: auto; margin-left: auto">
             <tr>
-                <td class = "helloCell"><div class = "helloText">Hello, I'm Matt.</div></td>
-                <td  rowspan = "2"><img class = "portrait" src="images/matt.jpg" alt = "Self Portrait"></td>
-            </tr>
-            <tr>
-                <td class = "aboutText">I am currently a senior at Lewis University, pursuing a Bachelor's of Computer Science
-                    with a concentration in Secure Programming; Projected graduation May 2023. Here, you will find some of my projects,
-                    hobbies, and contact information.
+                <td class = "aboutText">Upon Graduation in May 2023, I will be pursuing a career as a Software Engineer and/or
+                    in a computer security position. This website is updated regularly to include new projects and other pertinent information. Please feel free 
+                    to contact me at any time using the links at the bottom, and check out my project here:
                 </td>
             </tr>
+
+        <table style = "padding-top: 20px; margin-right: auto; margin-left: auto">
+            <tr>
+                <td><a href = "https://mattomalley.azurewebsites.net/project" class = "projLink" >Projects</a></td></td>
+            </tr>
+        </table>
+        
+        <table style = "margin-right: auto; margin-left: auto" class = "bottomLinks">
+            <tr>
+                <td><a href = "mailto: mattomalleygo@gmail.com"><img class = "logoformat" src="images/mail.png" alt="email icon"></a></td>
+                <td><a href = "https://www.linkedin.com/in/matthew-a-omalley/" target = "_blank"><img class = "logoformat" src="images/linked.png" alt="linkedin icon"></a></td>
+            </tr>
+        </table>
+
 
     </body>
     </html>

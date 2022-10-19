@@ -1,7 +1,10 @@
+html {
+    color: #333333;
+}
+
 h3 {
     float: left;
     font-family: kanit;
-    margin-top: 40px;
     text-align: center;
     font-size: 35px;
     padding-left: 5%;
@@ -27,12 +30,16 @@ a {
     padding-right: 4%;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .helloText {
-    font-size: 35px;
-    background-color: rgb(255, 203, 107);
-    border-radius: 1px;
+    float: right;
     font-family: titilli;
-    text-align: center;
+    color: #333333;
+    font-size: 35px;
 }
 
 .aboutText {
@@ -46,7 +53,7 @@ a {
     margin-right: auto;
     position: absolute;
     margin: auto;
-    top: 35%;
+    top: 30%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -56,6 +63,35 @@ a {
     height: 200px;
     width: 195px;
     border-radius: 1px;
+}
+
+.projLink {
+    padding: 10px;
+    background-color: #579F7E;
+    font-family: titilli;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 900;
+    color: white;
+}
+
+.projLink:hover {
+    background-color:#6db796;
+    color: rgb(200, 200, 200);
+}
+
+.bottomLinks {
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    color: #333333;
 }
 
 a:hover {
@@ -71,6 +107,12 @@ a:visited {
     font-size: 15px;
     float: right;
     padding: 2.5%;
+}
+
+.logoformat {
+    margin: 5px;
+    height: 20px;
+    width: 20px;
 }
 
 .navcell {

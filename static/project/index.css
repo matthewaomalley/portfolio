@@ -1,16 +1,12 @@
 /* Page CSS */
 
 .projSelTab {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     position: absolute;
-    margin: auto;
-    top: 18%;
-    left: 0;
     right: 0;
-    bottom: 0;
+    left: 0;
+    top: 18%;
 }
+
 .selectProject {
     padding-left: 10px;
     padding-right: 10px;
@@ -62,18 +58,19 @@ p {
 }
 
 .extLink {
-    border: none;
-    padding: 15px;
-    background-color: rgb(255, 203, 107);
+    padding: 10px;
+    background-color: #579F7E;
     font-family: titilli;
     font-size: 15px;
     cursor: pointer;
-    border-radius: 1px;
+    border-radius: 2px;
+    font-weight: 900;
+    color: white;
 }
 
 .extLink:hover {
-    background-color:rgb(255, 226, 171);
-    color: grey;
+    background-color:#6db796;
+    color: rgb(200, 200, 200);
 }
 
 /* Universal CSS */
