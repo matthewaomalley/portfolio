@@ -131,6 +131,58 @@ a:visited {
     padding-right: 15px;
 }
 
+.textDiv {
+    width: 40%;
+}
+
+@media screen and (max-width: 1600px) {
+    .textDiv {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .textDiv {
+      width: 60%;
+    }
+    .navbar {
+      padding: 4%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .textDiv {
+      width: 58%;
+    }
+    .navbar {
+      padding: 4%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    h3 {
+      font-family: kanit;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 35px;
+      float: none;
+    }
+    .textDiv {
+      width: 85%;
+    }
+    .navbar {
+      font-family: fire;
+      font-size: 14px;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      right: 0;
+    }
+
+}
+
+
+
 @font-face {
     font-family: 'kanit';
     src: url(fonts/kanit.ttf)

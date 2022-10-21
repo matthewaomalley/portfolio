@@ -120,6 +120,100 @@ a:visited {
     padding-right: 15px;
 }
 
+.textTable {
+    width: 33%; 
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1600px) {
+    .textTable {
+      width: 40%;
+    }
+    .aboutMe {
+        top: 28%;
+    }
+    .navbar {
+      padding: 4%;
+    }
+    .bottomLinks {
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .textTable {
+      width: 60%;
+    }
+    .navbar {
+      padding: 5%;
+    }
+    .bottomLinks {
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .bottomLinks {
+      position: relative;
+      margin-top: 15px;
+    }
+    .textTable {
+        width: 47%;
+      }
+    .bottomLinks {
+      position: fixed;
+    }
+}
+
+/* Phone Design */
+@media screen and (max-width: 360px) {
+    h3 {
+      font-family: kanit;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 35px;
+      float: none;
+    }
+    .navbar {
+      font-family: fire;
+      font-size: 14px;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      right: 0;
+    }
+    .textTable {
+      width: 5%;
+    }
+    .portrait {
+      height: 100px;
+      width: 95px;
+      border-radius: 1px;
+    }
+    .aboutMe {
+        top: 28%;
+    }
+    .helloText {
+      float: right;
+      font-family: titilli;
+      font-size: 25px;
+    }
+    .aboutText {
+        font-size: 12px;
+        border-radius: 1px;
+        font-family: titilli;
+    }
+    .textTable {
+        width: 85%; 
+        margin-right: auto; 
+        margin-left: auto;
+    }
+    .bottomLinks {
+        position: fixed;
+    }
+}
+
 @font-face {
     font-family: 'kanit';
     src: url(fonts/kanit.ttf)
