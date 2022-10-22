@@ -86,41 +86,51 @@ a:visited {
 
 @media screen and (max-width: 1600px) {
     img {
-      height: 300px;
-      width: 500px;
+        height: 300px;
+        width: 500px;
     }
     .navbar {
-      padding: 4%;
+        padding: 4%;
     }
 }
 
 @media screen and (max-width: 1000px) {
     img {
-      height: 250px;
-      width: 350px;
+        height: 250px;
+        width: 350px;
     }
     .navbar {
-      padding: 5%;
+        padding: 5%;
+        font-size: 13px;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px), (max-width: 390px) {
     img {
-      height: 100px;
-      width: 150px;
+        height: 100px;
+        width: 150px;
+    }
+    h3 {
+        padding: 0;
+        float: none;
     }
     .navbar {
-      font-family: fire;
-      font-size: 14px;
-      position: absolute;
-      top: 10%;
-      left: 10%;
-      right: 0;
+        font-size: 12px;
+        float: none;
+        position: absolute;
+        top: 11%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .titles {
-      font-size: 20px;
+        font-size: 20px;
+        padding-top: 5%;
     }
 }
+
 
 @font-face {
     font-family: 'kanit';
