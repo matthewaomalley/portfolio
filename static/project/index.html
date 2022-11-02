@@ -25,10 +25,11 @@
 
             // Simple script to show and hide elements for displaying the right content
             window.onload = function() {
-            hideCalcOnLoad(); };
+                hideOnLoad(); };
 
-            function hideCalcOnLoad() {
+            function hideOnLoad() {
                 document.getElementById("calculatorContent").classList.add("showNone")
+                document.getElementById("weatherContent").classList.add("showNone")
                 document.getElementById("noteifyContent").classList.add("maincontent")
             }
 
@@ -37,6 +38,7 @@
                 document.getElementById("noteifyContent").classList.remove("showNone")
                 document.getElementById("noteifyContent").classList.add("maincontent")
                 document.getElementById("calculatorContent").classList.add("showNone")
+                document.getElementById("weatherContent").classList.add("showNone")
             }
 
             function showCalculator() {
@@ -44,6 +46,15 @@
                 document.getElementById("noteifyContent").classList.add("showNone")
                 document.getElementById("calculatorContent").classList.add("maincontent")
                 document.getElementById("calculatorContent").classList.remove("showNone")
+                document.getElementById("weatherContent").classList.add("showNone")
+            }
+
+            function showWeather() {
+                document.getElementById("weatherContent").classList.add("changecontent")
+                document.getElementById("noteifyContent").classList.add("showNone")
+                document.getElementById("calculatorContent").classList.add("showNone")
+                document.getElementById("weatherContent").classList.add("maincontent")
+                document.getElementById("weatherContent").classList.remove("showNone")
             }
 
         </script>
@@ -51,6 +62,7 @@
         <table class = "projSelTab">
             <tr>
                 <td class = "selectProject"><button onclick = "showNoteify()" class = "selectProjectButton"><a><u>Noteify</u></a></button></td>
+                <td class = "selectProject"><button onclick = "showWeather()"class = "selectProjectButton"><a><u>WeatherText</u></a></button></td>
                 <td class = "selectProject"><button onclick = "showCalculator()"class = "selectProjectButton"><a><u>Accupay</u></a></button></td>
             </tr>
         </table>
@@ -96,6 +108,30 @@
                 </ul><br>
 
                 <a href = "https://github.com/matthewaomalley/AccuPayApp" target = "_blank" class = "extLink" >Github</a> <br>&nbsp
+        </div>
+
+        <div class = "textDiv" id = "weatherContent">
+            <p style = "font-size: 40px; font-family: titilli">WeatherText</p>
+            <p style = "font-size: 15px; font-family: titilli">This project started as an exploration of the 
+            capabilities of API's. It soon transformed into a web app that sends daily weather updates to it's users
+            based on their location via text message. This program incorporates several API's that: provide latitude & longitude
+            data, temperature and forecasted weather events, SMS texting services, and real-time database capabilities. All of 
+            these work in harmony to deliver useful, current forecasts to users directly to their phone.</p><p>This project was developed
+            to gain a deeper understanding of API's, as well as to create something beautiful and useful.</p>
+
+                <ul style = "float: left" class = "listStyle">
+                    <p><strong>Features:</strong></p>
+                    <li> Allows users to sign up on the website by providing name, number, and zipcode.</li>
+                    <li> Sends users current temperature & weather forecasts for the day based on their location</li>
+                    <li> Allows users to unsubscribe from the service on the website or SMS</li>
+                    <p>Due to API concurrent call limits and other service costs, this website will not be active for long</p>
+                </ul><br>
+
+                <div style = "margin: 70px;">
+                    <a style = "margin: 10px;" href = "https://weathertext.azurewebsites.net/" target = "_blank" class = "extLink" >Website</a>
+                    <a href = "https://github.com/matthewaomalley/weathertext" target = "_blank" class = "extLink" >Github</a> <br>&nbsp
+                </div>
+
         </div>
 
     </body>
